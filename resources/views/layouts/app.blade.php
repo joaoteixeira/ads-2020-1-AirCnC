@@ -67,8 +67,11 @@
 </head>
 
 <body>
-    <div class="content">
-        @yield('content')
+    <div class="flex-center position-ref full-height">
+
+        <div class="content">
+            @yield('content')
+        </div>
     </div>
 </body>
 
