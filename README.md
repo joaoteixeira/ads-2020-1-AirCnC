@@ -1,4 +1,4 @@
-<p align="center"><img src="https://raw.githubusercontent.com/joaoteixeira/ads-2020-1-AirCnC/inicialconfig/assets/AirCnC-Logo.png" width="400"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/joaoteixeira/ads-2020-1-AirCnC/inicialconfig/assets/AirCnC-Logo.png" width="200"></p>
 
 # AirCnC
 Projeto desenvolvido por Ivandeson e Pedro Lucas.
