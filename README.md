@@ -1,82 +1,65 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
+<p align="center"><img src="https://raw.githubusercontent.com/joaoteixeira/ads-2020-1-AirCnC/inicialconfig/assets/AirCnC-Logo.png" width="400"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+# AirCnC
+Projeto desenvolvido por Ivandeson e Pedro Lucas.
 
-# ads-2020-1-AirCnC
-Ivandeson e Pedro
+## Sobre o Projeto
 
-## About Laravel
+O sistema é baseado no famoso app AirBnB, que é um mercado on-line para organizar ou oferecer hospedagem. Nesse caso, o AirCnC usará esse princípio de hospedagem, porém no âmbito empresarial, que no caso as empresas se cadastram com as informações de quais tecnologias utilizam e alguma pessoa pode entrar com seu perfil do GitHub e com quais tecnologias desejar e procurar por quais empresas utilizam tais tecnologias e assim
+selecionar a que melhor lhe agrada, e após isso a empresa poderá analisar a pessoa e decidir se vale a pena entrar em contato.
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+## Objetivos do AirCnC
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+- Na tela inicial será apresentado duas opções, uma para entrar como
+usuário e outra para entrar como empresa e cadastrar as informações
+necessárias;
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+- A empresa precisará informar o nome da empresa, e as tecnologias
+que utiliza;
 
-## Learning Laravel
+- O usuário comum irá entrar com o seu perfil do GitHub, com seu e-mail
+e com informações de quais tecnologias está buscando;
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+- Aparecerá uma tela com a listagem de todas as empresas que se
+encaixam nos filtros de busca estabelecidos pelo usuário, com as
+tecnologias selecionadas por ele;
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 1500 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+- Nessa listagem o usuário poderá escolher uma empresa e solicitar
+contato;
 
-## Laravel Sponsors
+- A empresa irá poder analisar o perfil do usuário que está solicitando
+interesse, e poderá analisar o perfil já que o usuário irá entrar com o
+perfil do GitHub;
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
+- Após interesse demonstrado entre as duas partes a empresa poderá
+entrar em contato com o usuário através do e-mail.
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[British Software Development](https://www.britishsoftware.co)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- [UserInsights](https://userinsights.com)
-- [Fragrantica](https://www.fragrantica.com)
-- [SOFTonSOFA](https://softonsofa.com/)
-- [User10](https://user10.com)
-- [Soumettre.fr](https://soumettre.fr/)
-- [CodeBrisk](https://codebrisk.com)
-- [1Forge](https://1forge.com)
-- [TECPRESSO](https://tecpresso.co.jp/)
-- [Runtime Converter](http://runtimeconverter.com/)
-- [WebL'Agence](https://weblagence.com/)
-- [Invoice Ninja](https://www.invoiceninja.com)
-- [iMi digital](https://www.imi-digital.de/)
-- [Earthlink](https://www.earthlink.ro/)
-- [Steadfast Collective](https://steadfastcollective.com/)
-- [We Are The Robots Inc.](https://watr.mx/)
-- [Understand.io](https://www.understand.io/)
-- [Abdel Elrafa](https://abdelelrafa.com)
-- [Hyper Host](https://hyper.host)
-- [Appoly](https://www.appoly.co.uk)
-- [OP.GG](https://op.gg)
-- [云软科技](http://www.yunruan.ltd/)
+## Sobre o Laravel
 
-## Contributing
+O Laravel é uma estrutura de aplicativos da web com sintaxe expressiva e elegante. Acreditamos que o desenvolvimento deve ser uma experiência agradável e criativa para ser verdadeiramente gratificante. O Laravel elimina as dificuldades do desenvolvimento, facilitando tarefas comuns usadas em muitos projetos da web.
 
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
+- [Mecanismo de roteamento simples e rápido](https://laravel.com/docs/routing).
+- [Contêiner de injeção de dependência poderoso](https://laravel.com/docs/container).
+- Vários back-ends para [session](https://laravel.com/docs/session) e [cache](https://laravel.com/docs/cache) storage.
+- Expressiva, intuitiva [database ORM](https://laravel.com/docs/eloquent).
+- Migrações de esquema [independente de banco de dados](https://laravel.com/docs/migrations).
+- [Processamento de trabalho em segundo plano robusto](https://laravel.com/docs/queues).
+- [Transmissão de eventos em tempo real](https://laravel.com/docs/broadcasting).
 
-## Code of Conduct
+O Laravel é acessível, poderoso e fornece as ferramentas necessárias para aplicativos grandes e robustos.
 
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
+## Contribuição
 
-## Security Vulnerabilities
+Obrigado por considerar contribuir com o framework Laravel! O guia de contribuição pode ser encontrado na [documentação Laravel](https://laravel.com/docs/contributions).
 
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
+## Código de conduta
 
-## License
+Para garantir que a comunidade Laravel seja acolhedora para todos, revise e respeite os [Códigos de Conduta](https://laravel.com/docs/contributions#code-of-conduct).
 
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+## Vulnerabilidades de segurança
+
+Se você descobrir uma vulnerabilidade de segurança no Laravel, envie um e-mail para Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). Todas as vulnerabilidades de segurança serão prontamente abordadas.
+
+## Licensa
+
+A estrutura do Laravel é um software de código aberto licenciado sob a [licença MIT](https://opensource.org/licenses/MIT).
