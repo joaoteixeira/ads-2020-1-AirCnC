@@ -14,6 +14,7 @@
 
 <body>
     @yield('content')
+    <img src="https://raw.githubusercontent.com/joaoteixeira/ads-2020-1-AirCnC/inicialconfig/assets/AirCnC-Logo.png" alt="aircnc-logo" width="100">
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
