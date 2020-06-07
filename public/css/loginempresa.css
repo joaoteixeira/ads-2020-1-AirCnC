@@ -43,6 +43,10 @@ button {
   padding: 30px;
 }
 
+.content > img {
+  width: 200px;
+}
+
 .content > p {
   font-size: 22px;
   line-height: 30px;

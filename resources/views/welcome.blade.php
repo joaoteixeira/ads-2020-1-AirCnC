@@ -5,7 +5,7 @@
 @section('content')
 <div class="container">
     <div class="content">
-        <img src="{{asset('assets/logo.png')}}" alt="">
+        <img src="{{asset('assets/logo.png')}}" alt="logo">
         <p>
             Escolha uma das <strong>opções</strong> abaixo.
         </p>
