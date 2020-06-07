@@ -1,19 +1,22 @@
-@extends('layouts.principal')
+@extends('layouts.login')
 
 @section('title', 'Bem vindo ao AirCnC')
 
 @section('content')
 <div class="container">
     <div class="content">
+        <img src="{{asset('assets/logo.png')}}" alt="">
         <p>
-            Ofereça <strong>spots</strong> para programadores e encontre
-            <strong>talentos</strong> para sua empresa
+            Escolha uma das <strong>opções</strong> abaixo.
         </p>
-        <form>
-            <label for="email">E-MAIL *</label>
-            <input type="email" id="email" placeholder="Seu melhor e-mail" value="email" />
+        <form action="/login-empresa">
             <button class="btn" type="submit">
-                Entrar
+                Empresa
+            </button>
+        </form>
+        <form action="/login-usuario">
+            <button class="btn" type="submit">
+                Usuário
             </button>
         </form>
     </div>
