@@ -10,5 +10,7 @@ class Empresa extends Model
 
     protected $table = 'empresas';
 
+    protected $fillable = ['nome','email','tecnologias','tipo_vaga','quant_vaga'];
+
     public $timestamps = false;
 }
