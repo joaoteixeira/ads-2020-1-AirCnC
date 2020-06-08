@@ -48,8 +48,5 @@ entrar em contato com o usuário através do e-mail.
 
 ## Autores do projeto
 
-| [<img src="https://avatars1.githubusercontent.com/u/48169636?v=4" width="155"><br><sub>@pedrolucasbr</sub>](https://github.com/pedrolucasbr) |
-| :---: |©
-
-| [<img src="https://avatars0.githubusercontent.com/u/34588709?v=4" width="155"><br><sub>@ivandersonbordin</sub>](https://github.com/ivandersonbordin) |
-| :---: |©
+| [<img src="https://avatars1.githubusercontent.com/u/48169636?v=4" width=115><br><sub>@pedrolucasbr</sub>](https://github.com/pedrolucasbr) | [<img src="https://avatars0.githubusercontent.com/u/34588709?v=4" width=115><br><sub>@ivandersonbordin</sub>](https://github.com/ivandersonbordin) |
+| :---: | :---: |
