@@ -29,3 +29,7 @@ Route::get('/empresa', function () {
 Route::get('/empresa/atualizar', function () {
     return view('pages.atualizar-empresa');
 });
+
+Route::get('/criar-vaga', function () {
+    return view('pages.criar-vaga');
+});
