@@ -33,3 +33,23 @@ perfil do GitHub;
 
 - Após interesse demonstrado entre as duas partes a empresa poderá
 entrar em contato com o usuário através do e-mail.
+
+#
+
+> ## Banco de dados
+
+```Modelo conceitual```
+<p align="center"><img src="https://raw.githubusercontent.com/joaoteixeira/ads-2020-1-AirCnC/master/db/AirCnC-ModeloConceitual.png"></p>
+
+```Modelo lógico```
+<p align="center"><img src="https://raw.githubusercontent.com/joaoteixeira/ads-2020-1-AirCnC/master/db/AirCnC-ModeloLogico.png"></p>
+
+#
+
+## Autores do projeto
+
+| [<img src="https://avatars1.githubusercontent.com/u/48169636?v=4" width="155"><br><sub>@pedrolucasbr</sub>](https://github.com/pedrolucasbr) |
+| :---: |©
+
+| [<img src="https://avatars0.githubusercontent.com/u/34588709?v=4" width="155"><br><sub>@ivandersonbordin</sub>](https://github.com/ivandersonbordin) |
+| :---: |©
