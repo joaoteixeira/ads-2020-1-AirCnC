@@ -17,6 +17,9 @@
                 <label for="quant_vaga">QUANTIDADE DE VAGAS </label>
                 <input type="number" id="quant_vaga" placeholder="Qual a quantidade de vagas?" />
 
+                <label for="quant_vaga">FOTO RELACIONADA<span> (URL da imagem)</span> </label>
+                <input type="text" id="imagem" placeholder="Qual a imagem relacionada a essa vaga?" />
+
                 <button type="submit" class="btn">Criar</button>
             </form>
         </div>
