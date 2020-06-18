@@ -1,14 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.login')
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Oi</title>
-</head>
+@section('title', 'Bem vindo ao AirCnC')
 
-<body>
-    <h1>Hello World</h1>
-</body>
+@section('content')
+<div class="container">
+    <div class="content">
+        <p style="text-align:center">
+            <strong>Atualizar informações</strong>
+        </p>
+        <form action="/empresa">
+            <label for="nome">NOME </label>
+            <input type="name" id="nome" placeholder="Nome da empresa" />
 
-</html>
+            <label for="email">E-MAIL </label>
+            <input type="email" id="email" placeholder="E-mail da empresa" />
+
+            <button class="btn" type="submit">
+                Salvar
+            </button>
+        </form>
+    </div>
+</div>
+@endsection

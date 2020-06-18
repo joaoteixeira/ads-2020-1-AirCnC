@@ -16,7 +16,7 @@
             <input type="name" id="nome" placeholder="Seu nome" />
 
             <label for="email">E-MAIL </label>
-            <input type="email" id="email" placeholder="Seu melhor e-mail" value="email" />
+            <input type="email" id="email" placeholder="Seu melhor e-mail" />
 
             <label for="tecnologias">TECNOLOGIAS </label>
             <input type="text" id="tecnologias" placeholder="Suas tecnologias" />

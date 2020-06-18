@@ -4,6 +4,10 @@
 
 @section('content')
 <div>
+    <a href="/usuario/atualizar">
+        <button class="btn-atualizar">Atualizar informações</button>
+    </a>
+
     <ul class="notifications">
         <li>
             <p>

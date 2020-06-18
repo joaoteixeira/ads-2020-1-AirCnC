@@ -11,7 +11,7 @@
                 <label for="vaga">VAGA</label>
                 <input type="text" id="vaga" placeholder="Qual o nome da vaga disponível?" />
 
-                <label for="techs">TECNOLOGIAS<span>(separadas por vírgula)</span></label>
+                <label for="techs">TECNOLOGIAS<span> (separadas por vírgula)</span></label>
                 <input type="text" id="techs" placeholder="Quais tecnologias usam?" />
 
                 <label for="quant_vaga">QUANTIDADE DE VAGAS </label>
