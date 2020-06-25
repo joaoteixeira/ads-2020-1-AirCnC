@@ -6,10 +6,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/login-empresa', function () {
-    return view('pages.login-empresa');
-});
-
 Route::get('/login-usuario', function () {
     return view('pages.login-usuario');
 });
@@ -33,3 +29,5 @@ Route::get('/empresa/atualizar', function () {
 Route::get('/criar-vaga', function () {
     return view('pages.criar-vaga');
 });
+
+Route::resource('/login-empresa', 'EmpresaController');
