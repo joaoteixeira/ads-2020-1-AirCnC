@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Empresa;
 use Illuminate\Http\Request;
 
 class EmpresaController extends Controller
@@ -13,7 +14,9 @@ class EmpresaController extends Controller
      */
     public function index()
     {
-        return view('pages.login-empresa');
+        $empresas = Empresa::all();
+
+        return view('pages.empresa.dashboard-empresa', array('empresas' => $empresas));
     }
 
     /**
@@ -23,7 +26,7 @@ class EmpresaController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.empresa.login-empresa');
     }
 
     /**
@@ -34,7 +37,9 @@ class EmpresaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $empresa = Empresa::create($request->all());
+
+        return redirect('dashboard');
     }
 
     /**

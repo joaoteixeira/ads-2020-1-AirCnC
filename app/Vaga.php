@@ -10,7 +10,7 @@ class Vaga extends Model
 
     protected $table = 'vagas';
 
-    protected $fillable = ['tipo_vaga', 'qtd_vaga', 'imagem'];
+    protected $fillable = ['tipo_vaga', 'qtd_vaga', 'imagem', 'tecnologias'];
 
     public $timestamps = false;
 }

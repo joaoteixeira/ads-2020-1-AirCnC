@@ -9,8 +9,7 @@ CREATE TABLE usuarios (
 CREATE TABLE empresas (
     id_empresa INTEGER PRIMARY KEY,
     nome VARCHAR(80),
-    email VARCHAR(100),
-    tecnologias VARCHAR(300)
+    email VARCHAR(100)
 );
 
 CREATE TABLE vagas (
@@ -18,6 +17,7 @@ CREATE TABLE vagas (
     tipo_vaga VARCHAR(40),
     qtd_vaga INTEGER,
     imagem VARCHAR(300),
+    tecnologias VARCHAR(300),
     id_empresa INTEGER references empresas(id_empresa)
 );
 

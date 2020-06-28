@@ -19,15 +19,17 @@ Route::get('/usuario/atualizar', function () {
 });
 
 Route::get('/empresa', function () {
-    return view('pages.dashboard-empresa');
+    return view('pages.empresa.dashboard-empresa');
 });
 
 Route::get('/empresa/atualizar', function () {
-    return view('pages.atualizar-empresa');
+    return view('pages.empresa.atualizar-empresa');
 });
 
 Route::get('/criar-vaga', function () {
-    return view('pages.criar-vaga');
+    return view('pages.empresa.criar-vaga');
 });
 
-Route::resource('/login-empresa', 'EmpresaController');
+Route::resource('/empresa', 'EmpresaController');
+
+Route::resource('/usuario', 'UsuarioController');

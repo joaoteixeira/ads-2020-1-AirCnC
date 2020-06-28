@@ -8,12 +8,13 @@
         <p style="text-align:center">
             <strong>Empresa</strong>
         </p>
-        <form action="/empresa">
+        <form action="{{ route('empresa.store')}}">
+            @csrf
             <label for="nome">NOME </label>
-            <input type="name" id="nome" placeholder="Nome da empresa" />
+            <input type="name" id="nome" placeholder="Nome da empresa" name="nome" />
 
             <label for="email">E-MAIL </label>
-            <input type="email" id="email" placeholder="E-mail da empresa" />
+            <input type="email" id="email" placeholder="E-mail da empresa" name="email" />
 
             <button class="btn" type="submit">
                 Entrar
