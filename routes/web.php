@@ -15,7 +15,7 @@ Route::get('/usuario', function () {
 });
 
 Route::get('/usuario/atualizar', function () {
-    return view('pages.atualizar-usuario');
+    return view('pages.usuario.atualizar-usuario');
 });
 
 Route::get('/empresa', function () {
