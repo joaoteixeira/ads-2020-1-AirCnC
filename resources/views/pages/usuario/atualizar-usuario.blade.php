@@ -8,7 +8,7 @@
         <p style="text-align:center">
             <strong>Atualizar informações</strong>
         </p>
-        <form method="POST" action="{{ route('usuario.update', $usuario->id_usuario')}}">
+        <form method="POST" action="{{ route('usuario.update', $usuario->id_usuario)}}">
             @csrf
             @method('PUT')
             <label for="perfil_github">PERFIL DO GITHUB </label>
