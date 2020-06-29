@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Vaga;
 use Illuminate\Http\Request;
 
 class VagaController extends Controller
@@ -22,7 +23,7 @@ class VagaController extends Controller
      */
     public function create()
     {
-        //
+        return view('pages.vaga.criar-vaga');
     }
 
     /**
@@ -33,7 +34,9 @@ class VagaController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        Vaga::create($request->all());
+
+        return redirect('empresa');
     }
 
     /**
@@ -55,7 +58,12 @@ class VagaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $vaga = Vaga::find($id);
+
+        return view(
+            'pages.vaga.atualizar-vaga',
+            array('vaga' => $vaga)
+        );
     }
 
     /**
@@ -67,7 +75,10 @@ class VagaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $vaga = Vaga::find($id);
+        $vaga->update($request->all());
+
+        return redirect('vaga');
     }
 
     /**

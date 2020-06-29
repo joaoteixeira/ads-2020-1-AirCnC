@@ -19,19 +19,17 @@
     </ul>
 
     <ul class="spot-list">
+        @foreach($vagas as $vaga)
         <li>
-            <header style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=40')"></header>
-            <strong>Nome da vaga</strong>
-            <span>Quantidade de vagas</span>
+            <header style="background-image: url('{{$vaga->imagem}}')"></header>
+            <strong>{{$vaga->tipo_vaga}}</strong>
+            <span>{{$vaga->tecnologias}}</span>
+            <span>{{$vaga->qtd_vaga}} vagas</span>
         </li>
-        <li>
-            <header style="background-image: url('https://images.unsplash.com/photo-1562229125-6d6075419a22?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=40')"></header>
-            <strong>Nome da vaga 2</strong>
-            <span>Quantidade de vaga</span>
-        </li>
+        @endforeach
     </ul>
 
-    <a href="/criar-vaga">
+    <a href="{{ route('vaga.create')}}">
         <button class="btn">Criar nova vaga</button>
     </a>
 </div>

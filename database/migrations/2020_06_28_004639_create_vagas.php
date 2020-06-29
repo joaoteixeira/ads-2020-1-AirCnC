@@ -19,8 +19,6 @@ class CreateVagas extends Migration
             $table->integer('qtd_vaga')->default(1);
             $table->string('imagem', 300);
             $table->string('tecnologias', 300);
-            $table->integer('id_empresa')->unsigned();
-            $table->foreign('id_empresa')->references('id_empresa')->on('empresas');
             $table->timestamps();
         });
     }

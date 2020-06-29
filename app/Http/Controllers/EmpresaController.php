@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Empresa;
+use App\Vaga;
 use Illuminate\Http\Request;
 
 class EmpresaController extends Controller
@@ -15,10 +16,11 @@ class EmpresaController extends Controller
     public function index()
     {
         $empresas = Empresa::orderBy('id_empresa', 'ASC')->get();
+        $vagas = Vaga::orderBy('id_vaga', 'ASC')->get();
 
         return view(
             'pages.empresa.dashboard-empresa',
-            array('empresas' => $empresas),
+            array('empresas' => $empresas, 'vagas' => $vagas),
         );
     }
 

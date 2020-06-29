@@ -15,3 +15,4 @@ Route::get('usuario/escolher', 'UsuarioController@escolherUsuario')->name('usuar
 
 Route::resource('empresa', 'EmpresaController');
 Route::resource('usuario', 'UsuarioController');
+Route::resource('vaga', 'VagaController');
