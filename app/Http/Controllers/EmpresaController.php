@@ -14,7 +14,7 @@ class EmpresaController extends Controller
      */
     public function index()
     {
-        $empresas = Empresa::orderBy('id', 'ASC')->get();
+        $empresas = Empresa::orderBy('id_empresa', 'ASC')->get();
 
         return view(
             'pages.empresa.dashboard-empresa',

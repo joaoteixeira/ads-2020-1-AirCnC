@@ -14,13 +14,13 @@ class CreateVagas extends Migration
     public function up()
     {
         Schema::create('vagas', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id_vaga');
             $table->string('tipo_vaga', 40);
             $table->integer('qtd_vaga')->default(1);
             $table->string('imagem', 300);
             $table->string('tecnologias', 300);
             $table->integer('id_empresa')->unsigned();
-            $table->foreign('id_empresa')->references('id')->on('empresas');
+            $table->foreign('id_empresa')->references('id_empresa')->on('empresas');
             $table->timestamps();
         });
     }

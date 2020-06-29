@@ -14,7 +14,7 @@ class CreateUsuarios extends Migration
     public function up()
     {
         Schema::create('usuarios', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id_usuario');
             $table->string('perfil_github', 80);
             $table->string('nome', 100);
             $table->string('email', 100);

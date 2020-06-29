@@ -14,7 +14,7 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        $usuarios = Usuario::orderBy('id', 'ASC')->get();
+        $usuarios = Usuario::orderBy('id_usuario', 'ASC')->get();
 
         return view(
             'pages.usuario.dashboard-usuario',
@@ -72,6 +72,17 @@ class UsuarioController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
+
+    public function escolherUsuario()
+    {
+        $usuarios = Usuario::orderBy('id_usuario', 'ASC')->get();
+
+        return view(
+            'pages.usuario.escolher-usuario',
+            array('usuarios' => $usuarios),
+        );
+    }
+
     public function show($id)
     {
         //
@@ -85,7 +96,14 @@ class UsuarioController extends Controller
      */
     public function edit($id)
     {
-        //
+        $usuario = Usuario::find($id);
+
+        return view(
+            'pages.usuario.atualizar-usuario',
+            [
+                'usuario' => $usuario
+            ]
+        );
     }
 
     /**
@@ -97,7 +115,10 @@ class UsuarioController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $usuario = Usuario::find($id);
+        $usuario->update($request->all());
+
+        return redirect('usuario');
     }
 
     /**

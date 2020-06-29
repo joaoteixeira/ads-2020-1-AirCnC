@@ -4,7 +4,7 @@
 
 @section('content')
 <div>
-    <a href="/usuario/atualizar">
+    <a href="{{ route('usuario.escolherUsuario')}}">
         <button class="btn-atualizar">Atualizar informações</button>
     </a>
 

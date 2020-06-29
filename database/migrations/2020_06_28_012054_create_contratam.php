@@ -14,11 +14,11 @@ class CreateContratam extends Migration
     public function up()
     {
         Schema::create('contratam', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('id_contratam');
             $table->integer('id_empresa')->unsigned();
-            $table->foreign('id_empresa')->references('id')->on('empresas');
+            $table->foreign('id_empresa')->references('id_empresa')->on('empresas');
             $table->integer('id_usuario')->unsigned();
-            $table->foreign('id_usuario')->references('id')->on('usuarios');
+            $table->foreign('id_usuario')->references('id_usuario')->on('usuarios');
             $table->timestamps();
         });
     }
