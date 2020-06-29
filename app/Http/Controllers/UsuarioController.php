@@ -129,6 +129,11 @@ class UsuarioController extends Controller
      */
     public function destroy($id)
     {
-        //
+        $usuario = Usuario::find($id);
+
+        return view(
+            'pages.empresa.dashboard-empresa',
+            array('usuario' => $usuario)
+        );
     }
 }

@@ -9,13 +9,19 @@
     </a>
 
     <ul class="notifications">
+        @foreach($vagas as $vaga)
+        @foreach($usuarios as $usuario)
         <li>
             <p>
-                <strong>Perfil do github do usuario</strong> está solicitando uma vaga em <strong>Nome da vaga</strong>. <strong>email do usuario</strong>
+                O usuário <strong>{{$usuario->perfil_github}}</strong> está solicitando uma vaga para <strong>{{$vaga->tipo_vaga}}</strong>.
+                <strong>{{$usuario->email}}</strong>
             </p>
-            <button class="accept">ACEITAR</button>
-            <button class="reject">REJEITAR</button>
+            <button class="accept" type="submit">ACEITAR</button>
+            <button class="reject" type="submit">REJEITAR</button>
+
         </li>
+        @endforeach
+        @endforeach
     </ul>
 
     <ul class="spot-list">

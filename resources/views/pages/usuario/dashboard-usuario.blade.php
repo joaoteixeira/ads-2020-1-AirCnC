@@ -17,17 +17,13 @@
     </ul>
 
     <ul class="spot-list">
+        @foreach($vagas as $vaga)
         <li>
-            <header style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=40')"></header>
-            <strong>Nome do empresa</strong>
-            <span>Nome da vaga</span>
+            <header style="background-image: url('{{$vaga->imagem}}')"></header>
+            <strong>{{$vaga->tipo_vaga}}</strong>
+            <span>{{$vaga->tecnologias}}</span>
+            <span>{{$vaga->qtd_vaga}} vagas</span>
         </li>
-
-        <li>
-            <header style="background-image: url('https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=400&q=40')"></header>
-            <strong>Nome do Usuário</strong>
-            <span>Quantidade de vaga</span>
-        </li>
-    </ul>
+        @endforeach
 </div>
 @endsection
