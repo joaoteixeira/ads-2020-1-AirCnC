@@ -10,7 +10,7 @@ class Usuario extends Model
 
     protected $table = 'usuarios';
 
-    protected $fillable = ['perfil_github','nome','email','tecnologias'];
+    protected $fillable = ['perfil_github', 'nome', 'email', 'tecnologias'];
 
     public $timestamps = false;
 }

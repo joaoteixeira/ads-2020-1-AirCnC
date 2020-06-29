@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Usuario;
+use App\Vaga;
 use Illuminate\Http\Request;
 
 class UsuarioController extends Controller
@@ -15,10 +16,11 @@ class UsuarioController extends Controller
     public function index()
     {
         $usuarios = Usuario::orderBy('id_usuario', 'ASC')->get();
+        $vagas = Vaga::orderBy('id_vaga', 'ASC')->get();
 
         return view(
             'pages.usuario.dashboard-usuario',
-            array('usuarios' => $usuarios),
+            array('usuarios' => $usuarios, 'vagas' => $vagas),
         );
     }
 

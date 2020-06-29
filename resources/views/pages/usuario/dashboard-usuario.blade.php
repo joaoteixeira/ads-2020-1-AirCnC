@@ -10,9 +10,9 @@
 
     <ul class="notifications">
         <li>
-            <p>
+            <!-- <p>
                 Vaga solicitada com <strong>sucesso!</strong>
-            </p>
+            </p> -->
         </li>
     </ul>
 
