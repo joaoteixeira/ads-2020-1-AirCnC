@@ -11,10 +11,8 @@
     <ul class="notifications">
         <li>
             <p>
-                <strong>Perfil do github do usuario</strong> está solicitando uma reserva em <strong>Nome da vaga</strong>. <strong>email do usuario</strong>
+                Vaga solicitada com <strong>sucesso!</strong>
             </p>
-            <button class="accept">ACEITAR</button>
-            <button class="reject">REJEITAR</button>
         </li>
     </ul>
 

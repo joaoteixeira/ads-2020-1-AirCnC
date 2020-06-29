@@ -6,7 +6,7 @@
 <div class="container">
     <div class="content">
         <p style="text-align:center">
-            <strong>Empresa</strong>
+            <strong>Cadastrar Empresa</strong>
         </p>
         <form method="POST" action="{{ route('empresa.store')}}">
             @csrf
@@ -17,7 +17,7 @@
             <input type="email" id="email" placeholder="E-mail da empresa" name="email" />
 
             <button class="btn" type="submit">
-                Entrar
+                Cadastrar
             </button>
         </form>
     </div>

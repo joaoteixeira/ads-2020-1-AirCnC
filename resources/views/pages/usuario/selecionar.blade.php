@@ -8,12 +8,12 @@
         <p style="text-align:center">
             O que <strong>deseja</strong> fazer?
         </p>
-        <form action="{{ route('empresa.create') }}" class="buttons">
+        <form action="{{ route('usuario.create') }}" class="buttons">
             <button class="btn" type="submit">
-                Cadastrar Empresa
+                Cadastrar Usuário
             </button>
         </form>
-        <form action="{{ route('empresa.login')}}" class="buttons">
+        <form action="{{ route('usuario.login')}}" class="buttons">
             <button class="btn" type="submit">
                 Fazer Login
             </button>

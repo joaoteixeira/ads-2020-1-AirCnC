@@ -8,7 +8,7 @@
         <p style="text-align:center">
             <strong>Empresa</strong>
         </p>
-        <form method="GET" action="{{ route('empresa.fazerlogin')}}">
+        <form method="GET" action="{{ route('empresa.fazerLogin')}}">
             @csrf
             <label for="nome">NOME </label>
             <input type="name" id="nome" placeholder="Nome da empresa" name="nome" />

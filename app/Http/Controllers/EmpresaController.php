@@ -39,9 +39,24 @@ class EmpresaController extends Controller
      * @return \Illuminate\Http\Response
      */
 
-    public function fazerlogin()
+    public function login()
     {
-        return (redirect('empresa'));
+        return view('pages.empresa.login-empresa');
+    }
+
+    public function fazerLogin(Request $request)
+    {
+        $dados = Empresa::where('nome', $request->nome)->first();
+
+        $resultado = '';
+
+        if ($dados == '') {
+            $resultado = redirect('empresa/login');
+        } else {
+            $resultado = redirect('empresa');
+        }
+
+        return ($resultado);
     }
 
     public function store(Request $request)

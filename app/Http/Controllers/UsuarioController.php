@@ -29,7 +29,7 @@ class UsuarioController extends Controller
      */
     public function create()
     {
-        return view('pages.usuario.login-usuario');
+        return view('pages.usuario.cadastrar-usuario');
     }
 
     /**
@@ -38,6 +38,27 @@ class UsuarioController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+    public function login()
+    {
+        return view('pages.usuario.login-usuario');
+    }
+
+    public function fazerLogin(Request $request)
+    {
+        $dados = Usuario::where('perfil_github', $request->perfil_github)->first();
+
+        $resultado = '';
+
+        if ($dados == '') {
+            $resultado = redirect('usuario/login');
+        } else {
+            $resultado = redirect('usuario');
+        }
+
+        return ($resultado);
+    }
+
     public function store(Request $request)
     {
         Usuario::create($request->all());
