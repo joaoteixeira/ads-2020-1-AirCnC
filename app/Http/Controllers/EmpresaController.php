@@ -37,9 +37,9 @@ class EmpresaController extends Controller
      */
     public function store(Request $request)
     {
-        $empresa = Empresa::create($request->all());
+        Empresa::create($request->all());
 
-        return redirect('dashboard');
+        return ('Cadastrado');
     }
 
     /**

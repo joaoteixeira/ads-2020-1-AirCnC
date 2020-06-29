@@ -14,7 +14,7 @@ class CreateContratam extends Migration
     public function up()
     {
         Schema::create('contratam', function (Blueprint $table) {
-            $table->id();
+            $table->increments('id');
             $table->integer('id_empresa')->unsigned();
             $table->foreign('id_empresa')->references('id')->on('empresas');
             $table->integer('id_usuario')->unsigned();
