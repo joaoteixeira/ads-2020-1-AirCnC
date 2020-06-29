@@ -77,6 +77,16 @@ class EmpresaController extends Controller
         //
     }
 
+    public function escolherEmpresa()
+    {
+        $empresas = Empresa::orderBy('id_empresa', 'ASC')->get();
+
+        return view(
+            'pages.empresa.escolher-empresa',
+            array('empresas' => $empresas),
+        );
+    }
+
     /**
      * Show the form for editing the specified resource.
      *
@@ -85,7 +95,12 @@ class EmpresaController extends Controller
      */
     public function edit($id)
     {
-        //
+        $empresa = Empresa::find($id);
+
+        return view(
+            'pages.empresa.atualizar-empresa',
+            array('empresa' => $empresa)
+        );
     }
 
     /**
@@ -97,7 +112,10 @@ class EmpresaController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $empresa = Empresa::find($id);
+        $empresa->update($request->all());
+
+        return redirect('empresa');
     }
 
     /**

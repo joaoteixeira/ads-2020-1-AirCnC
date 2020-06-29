@@ -8,13 +8,14 @@
         <p style="text-align:center">
             <strong>Atualizar informações</strong>
         </p>
-        <form method="POST" action="{{ route('usuario.index')}}">
+        <form method="POST" action="{{ route('usuario.update', $usuario->id_usuario')}}">
             @csrf
+            @method('PUT')
             <label for="perfil_github">PERFIL DO GITHUB </label>
             <input type="text" id="perfil_github" placeholder="{{$usuario->perfil_github}}" name="perfil_github" />
 
             <label for="nome">NOME </label>
-            <input type="name" id="nome" placeholder="{{$usuario->nome}}" name="name" />
+            <input type="name" id="nome" placeholder="{{$usuario->nome}}" name="nome" />
 
             <label for="email">E-MAIL </label>
             <input type="email" id="email" placeholder="{{$usuario->email}}" name="email" />

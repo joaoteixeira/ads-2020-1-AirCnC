@@ -8,12 +8,14 @@
         <p style="text-align:center">
             <strong>Atualizar informações</strong>
         </p>
-        <form action="/empresa">
+        <form method="POST" action="{{ route('empresa.update', $empresa->id_empresa)}}">
+            @csrf
+            @method('PUT')
             <label for="nome">NOME </label>
-            <input type="name" id="nome" placeholder="Nome da empresa" />
+            <input type="name" id="nome" placeholder="{{$empresa->nome}}" name="nome" />
 
             <label for="email">E-MAIL </label>
-            <input type="email" id="email" placeholder="E-mail da empresa" />
+            <input type="email" id="email" placeholder="{{$empresa->email}}" name="email" />
 
             <button class="btn" type="submit">
                 Salvar
