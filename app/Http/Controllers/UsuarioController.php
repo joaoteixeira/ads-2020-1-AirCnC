@@ -14,7 +14,12 @@ class UsuarioController extends Controller
      */
     public function index()
     {
-        return view('pages.usuario.dashboard-usuario');
+        $usuarios = Usuario::orderBy('id', 'ASC')->get();
+
+        return view(
+            'pages.usuario.dashboard-usuario',
+            array('usuarios' => $usuarios),
+        );
     }
 
     /**
@@ -35,9 +40,9 @@ class UsuarioController extends Controller
      */
     public function store(Request $request)
     {
-        $usuario = Usuario::create($request->all());
+        Usuario::create($request->all());
 
-        return redirect('dashboard');
+        return (redirect('usuario'));
     }
 
     /**

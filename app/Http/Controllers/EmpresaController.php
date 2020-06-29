@@ -14,9 +14,12 @@ class EmpresaController extends Controller
      */
     public function index()
     {
-        $empresas = Empresa::all();
+        $empresas = Empresa::orderBy('id', 'ASC')->get();
 
-        return view('pages.empresa.dashboard-empresa', array('empresas' => $empresas));
+        return view(
+            'pages.empresa.dashboard-empresa',
+            array('empresas' => $empresas),
+        );
     }
 
     /**
@@ -26,7 +29,7 @@ class EmpresaController extends Controller
      */
     public function create()
     {
-        return view('pages.empresa.login-empresa');
+        return view('pages.empresa.cadastrar-empresa');
     }
 
     /**
@@ -35,11 +38,17 @@ class EmpresaController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
+
+    public function fazerlogin()
+    {
+        return (redirect('empresa'));
+    }
+
     public function store(Request $request)
     {
         Empresa::create($request->all());
 
-        return ('Cadastrado');
+        return (redirect('empresa/selecionar'));
     }
 
     /**

@@ -10,7 +10,7 @@
         <p style="text-align:center">
             Quem é <strong>você</strong>?
         </p>
-        <form action="{{ route('empresa.create') }}" class="buttons">
+        <form action="/empresa/selecionar" class="buttons">
             <button class="btn" type="submit">
                 Empresa
             </button>
